@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'IM Fell Great Primer', serif;
+    width: 100vw;
+
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 148, 156);
+    font-size: 20px;
+    height: 100px;
+
+}
+
+.encabezado__titulo {
+    display: flex;
+    font-size: 50px;
+    color: white;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.encabezado__titulo img {
+    display: inline-block;
+    position: relative;
+
+}
+
+
+.encabezado__barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.menu__form {
+    display: inline-block;
+    margin-left: 44%;
+
+}
+
+.menu__form label {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+
+}
+
+.menu__form input {
+    display: flex;
+    height: auto;
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.menu__form button {
+    display: flex;
+    align-content: center;
+    justify-content: end;
+}
+
+
+.barra__form {
+    display: flex;
+    margin-left: 450px;
+    align-content: center;
+    justify-content: end;
+
+
+}
+
+.barra__form input {
+    width: 500px;
+    height: 35px;
+
+
+}
+
+.barra__form button {
+    background-color: transparent;
+    border-width: initial;
+    border-style: none;
+
+}
+
+.barra__form button:hover {
+    transform: scale(1.5);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+
+
+}
+
+li a {
+    font-size: 28px;
+
+}
+
+
+
+ul {
+    display: inline-block;
+
+
+}
+
+.menu {
+    background-color: rgb(248, 148, 156);
+    height: calc(100vh - 165px);
+    width: 100vw;
+    background-image: URL("./img/fondo-pagina.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+
+
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.menu__titulo {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+    text-decoration: underline;
+
+}
+
+.menu__imagenes {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.menu__imagenes__mujer {
+    grid-row: 1;
+    grid-column: 1;
+
+}
+
+
+.menu__imagenes__promociones {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1f;
+    grid-row: 1;
+    grid-column: 4;
+    width: 900px;
+    height: 550px;
+    border-radius: 100px;
+
+}
+
+#promocion1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 10px ;
+    box-shadow: 3px 3px rgb(248, 148, 156);
+    margin-bottom: 30px;
+    background-image: URL("./img/promocion1.png");
+}
+
+
+#promocion2 {
+    grid-row: 2;
+    grid-column: 1;
+
+    border-radius: 10px ;
+    box-shadow: 3px 3px  rgb(248, 148, 156);
+    margin-right: 30px;
+    background-image: URL("./img/promocion2.png");
+}
+
+
+#promocion3 {
+    grid-row: 2;
+    grid-column: 2;
+    border-radius: 10px ;
+    box-shadow: 3px 3px  rgb(248, 148, 156);
+
+    background-image: URL("./img/promocion3.png");
+}
+
+
+.menu h4 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu__imagenIdea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu__section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 80px;
+
+
+}
+
+
+.menu__section img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    height: auto;
+
+
+}
+
+.menu__section-imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: auto;
+
+
+}
+
+p {
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(248, 148, 156);
+    height: 60px;
+
+}
