@@ -5,14 +5,30 @@
 
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-areas:
+        "header header header"
+        "menu__imagenes menu__imagenes menu__imagenes"
+        "footer footer footer";
+}
+
 body {
     font-family: 'IM Fell Great Primer', serif;
     width: 100vw;
 
 }
 
+.border {
+    border: 3px solid;
+}
+
 .encabezado {
     display: flex;
+ 
+    grid-area: header;
     align-items: center;
     background-color: rgb(248, 148, 156);
     font-size: 20px;
@@ -110,7 +126,6 @@ li {
 
 li a {
     font-size: 28px;
-
 }
 
 
@@ -118,21 +133,9 @@ li a {
 ul {
     display: inline-block;
 
-
 }
 
-.menu {
-    background-color: rgb(248, 148, 156);
-    height: calc(100vh - 165px);
-    width: 100vw;
-    background-image: URL("./img/fondo-pagina.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 5px;
 
-
-}
 
 
 a {
@@ -142,28 +145,24 @@ a {
     padding: 10px;
 }
 
-.menu__titulo {
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: 70px;
-    padding: 20px;
-    text-decoration: underline;
-
-}
 
 .menu__imagenes {
-    margin-top: 45px;
+    margin-top: 8px;
+    grid-area: menu__imagenes;
+    background-image: URL("./img/fondo-pagina.jpg");
+    background-position: center center;
+    background-size: cover;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 15vh 85vh;
 
 }
 
 .menu__imagenes__mujer {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 1;
-
+    margin-top: 45px;
+    
 }
 
 
@@ -172,18 +171,32 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1f;
-    grid-row: 1;
-    grid-column: 4;
+    grid-row: 2;
+    grid-column: 2;
     width: 900px;
     height: 550px;
     border-radius: 100px;
 
 }
+.menu__titulo {
+    display: inline-block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+    text-decoration: underline;
+
+
+}
+
 
 #promocion1 {
     grid-column-start: 1;
     grid-column-end: 3;
-    border-radius: 10px ;
+    border-radius: 10px;
     box-shadow: 3px 3px rgb(248, 148, 156);
     margin-bottom: 30px;
     background-image: URL("./img/promocion1.png");
@@ -194,8 +207,8 @@ a {
     grid-row: 2;
     grid-column: 1;
 
-    border-radius: 10px ;
-    box-shadow: 3px 3px  rgb(248, 148, 156);
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(248, 148, 156);
     margin-right: 30px;
     background-image: URL("./img/promocion2.png");
 }
@@ -204,8 +217,8 @@ a {
 #promocion3 {
     grid-row: 2;
     grid-column: 2;
-    border-radius: 10px ;
-    box-shadow: 3px 3px  rgb(248, 148, 156);
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(248, 148, 156);
 
     background-image: URL("./img/promocion3.png");
 }
@@ -262,10 +275,9 @@ p {
 
 
 footer {
+    grid-area: footer;
     display: flex;
     justify-content: end;
     align-items: center;
     background-color: rgb(248, 148, 156);
-    height: 60px;
-
 }
